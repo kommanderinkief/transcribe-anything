@@ -10,8 +10,8 @@ import unittest
 import shutil
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-LOCALFILE_DIR = os.path.join(HERE, "localfile")
-TESTS_DATA_DIR = os.path.join(LOCALFILE_DIR, "text_video", "en")
+LOCALFILE_DIR = os.path.join(HERE, "C:/Users/BIDENDREAMERS/Documents/GitHub/auto-video-editor")
+TESTS_DATA_DIR = os.path.join(LOCALFILE_DIR, "AudioRecording.mp4", "en")
 
 
 class TranscribeAnythingTester(unittest.TestCase):
@@ -21,7 +21,7 @@ class TranscribeAnythingTester(unittest.TestCase):
         """Check that the command works on a local file."""
         shutil.rmtree(TESTS_DATA_DIR, ignore_errors=True)
         subprocess.check_output(
-            ["transcribe_anything", "video.mp4", "--language", "en", "--model", "tiny"],
+            ["transcribe_anything", "AudioRecording.mp4", "--language", "en", "--model", "tiny"],
             cwd=LOCALFILE_DIR,
         )
 

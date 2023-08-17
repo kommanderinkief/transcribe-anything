@@ -208,7 +208,7 @@ if __name__ == "__main__":
     # transcribe(url_or_file="https://twitter.com/wlctv_ca/status/1598895698870951943")
     try:
         # transcribe(url_or_file="https://www.youtube.com/live/gBHFFM7-aCk?feature=share", output_dir="test")
-        transcribe(url_or_file="https://www.youtube.com/watch?v=DWtpNPZ4tb4", output_dir="test")
+        transcribe(url_or_file="C:/Users/BIDENDREAMERS/Documents/GitHub/auto-video-editor/AudioRecording.wav", output_dir="test")
     except KeyboardInterrupt:
         print("Keyboard interrupt")
         sys.exit(1)

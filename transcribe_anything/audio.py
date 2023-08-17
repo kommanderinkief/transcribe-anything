@@ -78,7 +78,7 @@ def fetch_audio(url_or_file: str, out_wav: str) -> None:
 
 def unit_test() -> None:
     """Runs the program."""
-    url = "https://www.youtube.com/watch?v=8Wg8f2g_GQY"
+    url = "C:/Users/BIDENDREAMERS/Documents/GitHub/auto-video-editor/AudioRecording.wav"
     fetch_audio(url, "out.wav")
 
 
